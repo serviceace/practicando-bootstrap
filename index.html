@@ -131,20 +131,19 @@
                       <div class="card-body">
                         <p>Primer Valor</p>
                         <div class="progress">
-                          <div id="barraProgreso" class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemax="100"></div>
+                          <div id="barraProgresoAzul" class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemax="100"></div>
                         </div>
                           <p>Segundo Valor</p>
                           <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div id="barraProgresoAmarilla" class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                           <p>Tercer Valor</p>
                           <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemax="100"></div>
+                            <div id="barraProgresoVerde" class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemax="100"></div>
                           </div>
-                          
                           <p>Cuarto Valor</p>
                           <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemax="100"></div>
+                            <div id="barraProgresoRojo" class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemax="100"></div>
                           </div>
                         </div>
                        </div>
@@ -164,24 +163,22 @@
                             
                           <form action="/action_page.php">
                               <label class="card-title fs-6 fw-lighter lh-1 tinyFont for="quantity">Primer Valor:</label>
-                              <input id="ejemploPrueba" class="card-text fs-5 fw-bolder lh-1" type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
-                              <input id="btnOK" class="btn btn-light" type="submit" value="Boton">
+                              <input id="primerValor" class="card-text fs-5 fw-bolder lh-1" type="number" name="quantity" min="0" max="100" step="5" value="0">
+                              <input id="btnAzul" class="btn btn-light" type="submit" value="Boton">
                           </form>
                           
                         </div>
                       </div>
                      </div>
                   </div>
-                  
-                  
                   <div class="col-3 fondoPagina">
                    <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
                     <div class="card-body text-white">
 
                       <form action="/action_page.php">
                         <label class="card-title fs-6 fw-lighter lh-1 tinyFont for="quantity">Segundo Valor:</label>
-                        <input class="card-text fs-5 fw-bolder lh-1" type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="15">
-                        <input class="btn btn-light" type="submit" value="Submit">
+                        <input id="segundoValor" class="card-text fs-5 fw-bolder lh-1" type="number" name="quantity" min="0" max="100" step="5" value="0">
+                        <input id="btnAmarillo" class="btn btn-light" type="submit" value="Boton">
                     </form>
                     
                     </div>
@@ -194,8 +191,8 @@
 
                     <form action="/action_page.php">
                       <label class="card-title fs-6 fw-lighter lh-1 tinyFont for="quantity">Tercer Valor:</label>
-                      <input class="card-text fs-5 fw-bolder lh-1" type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="80">
-                      <input class="btn btn-light" type="submit" value="Submit">
+                      <input id="tercerValor" class="card-text fs-5 fw-bolder lh-1" type="number" name="quantity" min="0" max="100" step="5" value="0">
+                      <input id="btnVerde" class="btn btn-light" type="submit" value="Boton">
                   </form>
                     
                     </div>
@@ -208,8 +205,8 @@
 
                       <form action="/action_page.php">
                         <label class="card-title fs-6 fw-lighter lh-1 tinyFont for="quantity">Cuarto Valor:</label>
-                        <input class="card-text fs-5 fw-bolder lh-1" type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="45">
-                        <input class="btn btn-light" type="submit" value="Submit">
+                        <input id="cuartoValor" class="card-text fs-5 fw-bolder lh-1" type="number" name="quantity" min="0" max="100" step="5" value="0">
+                        <input id="btnRojo" class="btn btn-light" type="submit" value="Boton">
                     </form>
                     
                     </div>
