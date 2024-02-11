@@ -34,3 +34,9 @@ btnRojo.addEventListener("click", (e) => {
     e.preventDefault();
     barraProgresoRojo.style.width = cuartoValor.value + "%";
   })
+
+const btn_search = document.querySelector('#btn_search');
+btn_search.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log('boton apretado');
+});

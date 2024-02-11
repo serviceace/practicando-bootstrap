@@ -10,21 +10,44 @@
   <body>
 
     <!-- Barra de navegación superior -->
-    <nav class="navbar navbar-expand-lg bg-ligth">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">S8 Admin Pro</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <nav class="navbar navbar-expand-lg bg-ligth row justify-content-end">
+        <div class="container-fluid ">
+          <a class="navbar-brand col-6" href="#">Iky Admin Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" id='btn_search' type="button" data-bs-toggle="modal" data-bs-target="#msj_emergente">Search</button>
             </form>
           </div>
         </div>
-      </nav>
-      <!-- MENU LATERAL -->
+    </nav>
+
+    
+
+    <!-- Ventana de Advertencia -->
+    <div class="modal fade" id="msj_emergente" tabindex="-1" aria-labelledby="msj_emergente_Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="msj_emergente_Label">Advertencia!!!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            No hay mucho para buscar en este ejemplo de Bootstrap. Cambia los valores dentro de los bloques de colores más abajo para jugar con los gráficos.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- MENU LATERAL -->
     <div class="container-fluid">
           <div class="row">
               <div class="col-2 bg-ligth">
@@ -32,36 +55,45 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Acordeón artículo #1
+                        Opcion #1
                       </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>Este es el cuerpo del acordeón del primer elemento.</strong> Se muestra de forma predeterminada, hasta que el complemento de colapso agrega las clases apropiadas que usamos para diseñar cada elemento. Estas clases controlan la apariencia general, así como la visualización y ocultación a través de transiciones CSS. Puedes modificar cualquiera de esto con CSS personalizado o sobrescribir nuestras variables predeterminadas. También vale la pena señalar que casi cualquier HTML puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
+                        <strong>Título Seccion</strong>
+                        <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Acordeón artículo #2
+                        Opcion #2
                       </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>Este es el cuerpo del acordeón del segundo elemento.</strong> Está oculto de manera predeterminada, hasta que el complemento de Collapse agregue las clases apropiadas que usamos para diseñar cada elemento. Estas clases controlan la apariencia general, así como la visualización y ocultación a través de transiciones CSS. Puedes modificar cualquiera de esto con CSS personalizado o sobrescribir nuestras variables predeterminadas. También vale la pena señalar que casi cualquier HTML puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
+                        <strong>Título Seccion</strong>
+                        <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Acordeón artículo #3
+                        Opcion #3
                       </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>Este es el cuerpo del acordeón del tercer elemento.</strong> Está oculto de manera predeterminada, hasta que el complemento Collapse agregue las clases apropiadas que usamos para diseñar cada elemento. Estas clases controlan la apariencia general, así como la visualización y ocultación a través de transiciones CSS. Puedes modificar cualquiera de esto con CSS personalizado o sobrescribir nuestras variables predeterminadas. También vale la pena señalar que casi cualquier HTML puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
+                        <strong>Título Seccion</strong>
+                        <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -76,24 +108,24 @@
 
               <!-- Header de la pagina -->
               <div class="col ">
-                <div class="row fondoDashboard">
+                
+                <div class="row fondoDashboard p-2">
+                  
                   <div class="col-4 ">
                     <p class="h4 fw-bold text-white">Dashboard</p>
-                    
                   </div>
-                  <div class="col-4"></div>
+
                   <div class="col-4 dropdown">
                     <button class="btn dropdown-toggle btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Boton DropDown
+                      Modo Oscuro/Claro
                     </button>
                     <ul class="dropdown-menu">
-                      <li class="dropdown-item">Opcion 1</li>
-                      <li class="dropdown-item">Opcion 2</li>
-                      <li class="dropdown-item">Opcion 3</li>
+                      <li class="dropdown-item">Activar Modo Oscuro</li>
+                      <li class="dropdown-item">Activar Modo Claro</li>
                     </ul>
                   </div>
                   <div class="row">
-                    <p class="card-text text-white text-center">Ésta landing page está hecha integramente con Bootstrap a modo de práctica. Mi intencion es tratar de tomar sites ya existentes y replicarlos con Bootstrap a modo de práctica personal. Particularmente el caso de ésta página, encontré una imagen random y me pareció que tenia muchos componentes diferentes; lo cual la hacia el ejemplo ideal para practicar en todos los aspectos. Aún no está terminada, pero constantemente estaré actualizandola para que su semejanza al ejemplo sea identica. Les dejo la imágen en cuestion para que puedan comaprar. <br><a class="text-warning" href="./imagen_ejemplo.jpg">Imágen de ejemplo</a> </p>
+                    <p class="card-text text-white text-center">Ésta landing page está hecha integramente con Bootstrap a modo de práctica. Particularmente el caso de ésta página, encontré una imagen random y me pareció que tenia muchos componentes diferentes; lo cual la hacia el ejemplo ideal para practicar en todos los aspectos. Aún no está terminada, pero constantemente estaré actualizandola para que su semejanza al ejemplo sea identica. Les dejo la imágen en cuestion para que puedan comaprar. <br><a class="text-warning" href="./imagen_ejemplo.jpg">Imágen de ejemplo</a> </p>
                   </div>
                 </div>
                 
@@ -103,8 +135,10 @@
                   <div class="col "> <!-- Primer bloquecito (ALFA) -->
                      <div class="card">
                       <div class="card-body">
-                        <h5 class="card-title texto-azul text-center fs-6 fw-bolder ">Welcome to SB Admin Pro!</h5>
-                        <p class="card-text text-center fs-6 fw-lighter">Browse our fully designed UI lookit! Browse our prebuilt app pages, components, and utilites, and be sure to look at our full documentation!</p>
+                        <h5 class="card-title texto-azul text-center fs-6 fw-bolder ">Experimentando con Bootstrap!</h5>
+                        <p class="card-text text-center fs-6 fw-lighter">
+                          Esta pagina es meramente experimental. Aqui procuro jugar un poco con lo que presenta Bootstrap como framework y lo mezclo con mis conocimientos en HTML y JavaScript. Elije un valor en cada bloque de color inferior y actualiza los graficos.
+                        </p>
                       </div>
                       <img src="./image/tranajando.png" class="card-img-bottom" alt="...">
                     </div>
@@ -113,12 +147,12 @@
                   
                   <div class="col"> <!-- Segundo bloquecito (BETA) -->
                     <div class="card">
-                      <div class="card-header texto-azul fw-bolder fs-6">INFO IMPORTANTE</div>
+                      <div class="card-header texto-azul fw-bolder fs-6">Actualizaciones</div>
                       <div class="card-body overflow-auto">
-                        <h5 class="card-title">Saludos!!</h5>
                         
-                        <p class="card-text"><small class="text-muted">Última actualización 18/07/2022</small></p>
+                        <p class="card-text"><small class="text-muted">Última actualización 09/02/2024</small></p>
                         <p class="card-text"><small class="text-muted">Última actualización 01/11/2022</small></p>
+                        <p class="card-text"><small class="text-muted">Última actualización 18/07/2022</small></p>
 
                       </div>
                     </div>
@@ -127,7 +161,7 @@
                   
                   <div class="col"> <!-- Tercer bloquecito (GAMMA) -->
                     <div class="card">
-                      <div class="card-header texto-azul fw-bolder">Progress Tracker</div>
+                      <div class="card-header texto-azul fw-bolder">Trackers de Valores</div>
                       <div class="card-body">
                         <p>Primer Valor</p>
                         <div class="progress">
